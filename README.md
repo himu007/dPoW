@@ -1,6 +1,6 @@
 ### What to do?
 
-1. Setup KMD & GAME (importing privkey and make sure funds are there) like you did for Season 3
+1. Setup KMD & GAME (importing privkey and make sure funds are there) like you did for Season 3 [help guide](https://docs.komodoplatform.com/notary/setup-Komodo-Notary-Node.html)
 2. (Re)Start KMD & GAME with `-pubkey` arg
 3. Install [`nanomsg`](https://docs.komodoplatform.com/notary/setup-Komodo-Notary-Node.html#install-nanomsg)
 4. Clone dPoW repo https://github.com/himu007/dPoW
