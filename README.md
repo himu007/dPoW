@@ -18,6 +18,6 @@ cd ~/dPoW/iguana
 Some Info:
 
 ```
-Minsig - 5
+Minsig - 13
 Iguana port to open - 17776
 ```
