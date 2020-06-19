@@ -24,7 +24,7 @@ Iguana port to open - 17776
 #### Bootstrap Links
 - [KMD](https://eu.bootstrap.dexstats.info/KMD-bootstrap.tar.gz)
 - [GAME](https://eu.bootstrap.dexstats.info/GAME-bootstrap.tar.gz)
-##### Detailed
+#### How to use Bootstrap?
 **KMD**
 Make sure Komodo daemon is stopped before using bootstrap.
 ```
