@@ -22,5 +22,5 @@ Minsig - 13
 Iguana port to open - 17776
 ```
 #### Bootstrap Links
-[KMD](https://eu.bootstrap.dexstats.info/KMD-bootstrap.tar.gz)
-[GAME](https://eu.bootstrap.dexstats.info/GAME-bootstrap.tar.gz)
+- [KMD](https://eu.bootstrap.dexstats.info/KMD-bootstrap.tar.gz)
+- [GAME](https://eu.bootstrap.dexstats.info/GAME-bootstrap.tar.gz)
