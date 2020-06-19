@@ -15,3 +15,9 @@ cd ~/dPoW/iguana
 8. Split KMD with 10000 satoshis
 9. Split GAME with 100000 satoshis
 
+Some Info:
+
+```
+Minsig - 5
+Iguana port to open - 17776
+```
