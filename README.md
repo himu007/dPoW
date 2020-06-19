@@ -15,9 +15,12 @@ cd ~/dPoW/iguana
 8. Split KMD with 10000 satoshis
 9. Split GAME with 100000 satoshis
 
-Some Info:
+#### Some Info:
 
 ```
 Minsig - 13
 Iguana port to open - 17776
 ```
+#### Bootstrap Links
+[KMD](https://eu.bootstrap.dexstats.info/KMD-bootstrap.tar.gz)
+[GAME](https://eu.bootstrap.dexstats.info/GAME-bootstrap.tar.gz)
