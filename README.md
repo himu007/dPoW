@@ -24,8 +24,8 @@ mv dPoW old.dPoW
 git clone https://github.com/kmdclassic/dPoW
 cd dPow/iguana
 make
-cp ~/old.dPoW/pubkey.txt .
-cp ~/old.dPoW/wp_7776 .
+cp ~/old.dPoW/iguana/pubkey.txt .
+cp ~/old.dPoW/iguana/wp_7776 .
 ```
 
 ### Open Port in firewall
