@@ -22,7 +22,7 @@ pkill -15 iguana
 cd ~
 mv dPoW old.dPoW
 git clone https://github.com/kmdclassic/dPoW
-cd dPow/iguana
+cd dPoW/iguana
 make
 cp ~/old.dPoW/iguana/pubkey.txt .
 cp ~/old.dPoW/iguana/wp_7776 .
