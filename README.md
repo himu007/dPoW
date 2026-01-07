@@ -15,13 +15,23 @@ This repository is based on the original SuperNET codebase - commit [f29913e92b1
 
 General [Setup instructions](https://github.com/KomodoPlatform/Documentation/blob/nn_docs_update/docs/notary/setup-Komodo-Notary-Node.md)
 
-### Build instructions for NN operations:
+### Build instructions for existing NN node:
 
-`cd iguana`
+```
+pkill -15 iguana
+cd ~
+mv dPoW old.dPoW
+git clone https://github.com/kmdclassic/dPoW
+cd dPow/iguana
+make
+cp ~/old.dPoW/pubkey.txt .
+cp ~/old.dPoW/wp_7776 .
+```
 
-#### Build iguana for notary operations
-
-`make`
+### Open Port in firewall
+```
+sudo ufw allow 13849/tcp
+```
 
 #### Start main-net notarizations:
 
