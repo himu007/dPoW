@@ -844,7 +844,7 @@ cJSON *SuperNET_urlconv(char *value,int32_t bufsize,char *urlstr)
                 jaddstr(json,key,value);
             else jaddistr(array,key);
             len += (n + 1);
-            if ( strcmp(key,"Content-Length") == 0 && (datalen= atoi(value)) > 0 )
+            if ( (strcmp(key,"Content-Length") == 0 || strcmp(key,"content-length") == 0) && (datalen= atoi(value)) > 0 )
             {
                 data = &urlstr[totallen - datalen];
                 data[-1] = 0;
@@ -1135,8 +1135,8 @@ char *SuperNET_rpcparse(struct supernet_info *myinfo,char *retbuf,int32_t bufsiz
 
 int32_t iguana_getcontentlen(char *buf,int32_t recvlen)
 {
-    char *str,*clenstr = "Content-Length: "; int32_t len = -1;
-    if ( (str= strstr(buf,clenstr)) != 0 )
+    char *str,*clenstr = "Content-Length: ",*clenstr2 = "content-length: "; int32_t len = -1;
+    if ( (str= strstr(buf,clenstr)) != 0 || (str= strstr(buf,clenstr2)) != 0 )
     {
         //printf("strstr.(%s)\n",str);
         str += strlen(clenstr);
