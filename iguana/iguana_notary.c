@@ -379,7 +379,7 @@ THREE_STRINGS_AND_DOUBLE(iguana,dpow,symbol,dest,pubkey,freq)
         dp->srcconfirms = DPOW_FIFOSIZE;
     if ( strcmp("LTC",dp->dest) == 0 )
     {
-        dp->freq = 5;
+        dp->freq = 10;  //KMDCL > LTC every 10 blocks
         dp->minsigs = Notaries_BTCminsigs; //DPOW_MINSIGS;
     }
     else
@@ -558,10 +558,8 @@ STRING_ARG(iguana,addnotary,ipaddr)
     return(clonestr("{\"result\":\"notary node added\"}"));
 }
 
-// TODO: Confirm that this is the correct list of currencies. Is TOKEL supposed to be in here? It's the only 3rd party coin in the list.
-char NOTARY_CURRENCIES[][65] = { "CCL", "PIRATE", "ILN", "THC", "MDX", "BCZERO", "RAPH", "KOIN", "GLEEC", "GLEEC_OLD", "TOKEL", "CLC" };
-
-// "LTC", "USD", "EUR", "JPY", "GBP", "AUD", "CAD", "CHF", "NZD", "CNY", "RUB", "MXN", "BRL", "INR", "HKD", "TRY", "ZAR", "PLN", "NOK", "SEK", "DKK", "CZK", "HUF", "ILS", "KRW", "MYR", "PHP", "RON", "SGD", "THB", "BGN", "IDR", "HRK",
+// TODO: Confirm that this is the correct list of currencies.
+char NOTARY_CURRENCIES[][65] = { "PIRATE" };
 
 void _iguana_notarystats(char *fname,int32_t totals[64],int32_t dispflag)
 {
